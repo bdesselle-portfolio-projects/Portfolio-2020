@@ -1,9 +1,12 @@
-import React from 'react';
+import React from 'react'
 
-function App() {
+// Components
+import Main from './components/Main'
+
+export default function App() {
   return (
-    <h1>Hello</h1>
-  );
+    <React.Fragment>
+      <Main/>
+    </React.Fragment>
+  )
 }
-
-export default App;
