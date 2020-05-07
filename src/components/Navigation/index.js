@@ -1,9 +1,23 @@
 import React from 'react'
 
+// About Me
+// Resume
+// Projects
+
 export default function index() {
     return (
         <div>
-            <h1>Navigation</h1>
+            <Nav fill>
+                <Nav.Item>
+                    <Nav.Link href='#'></Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                    <Nav.Link href='#'></Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                    <Nav.Link href='#'></Nav.Link>
+                </Nav.Item>
+            </Nav>
         </div>
     )
 }
