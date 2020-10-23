@@ -1,21 +1,22 @@
-import React from 'react'
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-
-// Components
-import Main from './components/Main'
-import Aside from './components/Aside'
-// import Navigation from './components/Navigation'
-
-export default function App() {
-  return (
-    <Container>
-      <Row>
-        <Col xs lg='3'><Aside /></Col>
-        <Col><Main /></Col>
-        <Col xs lg='1'><h1>Nav</h1></Col>
-      </Row>
-    </Container>
-  )
+import React, { Component } from 'react';
+import Header from './components/Header';
+import About from './components/About';
+import Resume from './components/Resume';
+import Portfolio from './components/Portfolio';
+import Footer from './components/Footer';
+import resumeData from './resumeData';
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <Header resumeData={resumeData}/>
+        <About resumeData={resumeData}/>
+        <Resume resumeData={resumeData}/>
+        {/* <Portfolio resumeData={resumeData}/> */}
+        <Footer resumeData={resumeData}/>
+      </div>
+    );
+  }
 }
+
+export default App;
